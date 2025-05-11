@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 function App() {
   const [message, setMessage] = useState(0);
   useEffect(async ()=>{
-    const res=await axios.get("http://localhost:3000",{
+    const res=await axios.get("https://sample-by6v.onrender.com",{
 
       withCredentials: true,
     });
