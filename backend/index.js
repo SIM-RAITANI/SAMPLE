@@ -4,7 +4,7 @@ import cookieParser from 'cookie-parser';
 const app= express();
 
 app.use(cors({
-    origin: "http://localhost:5174",
+    origin: "https://sample-1-9h7w.onrender.com",
     credentials: true,
 }));
 app.use(cookieParser());
