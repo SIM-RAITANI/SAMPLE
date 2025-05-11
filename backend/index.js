@@ -14,7 +14,8 @@ app.use(express.urlencoded({extended:true}));
 app.get("/", (req, res) => {
     res.cookie("name", "simran", {
         httpOnly: true,
-        secure: false
+        secure: true,
+        sameSite: "none",
     });
     res.json("Hello from the server");
 });
